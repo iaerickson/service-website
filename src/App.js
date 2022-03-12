@@ -1,4 +1,5 @@
 import "./App.css";
+import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -7,9 +8,8 @@ function App() {
 		<Router>
 			<div className='App'>
 				<Navbar />
-				<h1>Service Website</h1>
 				<Routes>
-					<Route path='/' exact />
+					<Route path='/' exact component={Home}/>
 				</Routes>
 			</div>
 		</Router>
